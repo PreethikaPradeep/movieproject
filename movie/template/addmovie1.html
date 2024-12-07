@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 class="text-center m-5">Add Movie Details</h1>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+    <table>
+{{form.as_table}}</table>
+     <div class="d-flex mx-auto ">
+        <button type="submit" class="btn btn-warning">Add movie</button></div>
+</form>
+</body>
+</html>
